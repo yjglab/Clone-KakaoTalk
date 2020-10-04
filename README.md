@@ -1,3 +1,3 @@
 # CLONE - KAKAOTALK
 
-Cloning Kakao talk...
+Now Cloning Application, "KakaoTalk"
