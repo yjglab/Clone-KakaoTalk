@@ -1,59 +1,56 @@
-@import "reset.css";
-@import "status-bar.css";
-@import "variables.css";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+/* Screens */
+@import "screens/login.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  height: 200vh;
 }
-.welcome-header {
+.nav {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav__list {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+.nav__notification {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 90px 0px;
-  text-align: center;
-  font-weight: 600;
-}
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-.welcome-header__text {
-  width: 60%;
-  opacity: 0.65;
-}
-#login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 30px;
-}
-#login-form input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-#login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
-}
-#login-form input:focus:not([type="submit"]) {
-  border-color: var(--yjgGreen);
-}
-#login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
-}
-#login-form input[type="submit"] {
-  background-color: var(--yjgGreen);
   color: white;
-  border-radius: 5px;
-  padding: 20px 0px;
-  cursor: pointer;
-  /* not-allowed, progress */
+  font-weight: 600;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: tomato;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
 }
-#login-form a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
+.nav__dot {
+  display: flex;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 15px;
+  background-color: tomato;
+  left: 30px;
+  bottom: 30px;
 }
