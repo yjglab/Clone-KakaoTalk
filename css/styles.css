@@ -6,51 +6,17 @@
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
+@import "components/friends.css";
+@import "components/user-component.css";
+@import "components/badge.css";
 /* Screens */
 @import "screens/login.css";
 
 body {
   font-family: "Open Sans", sans-serif;
   height: 200vh;
-}
-.nav {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: #f9f9fa;
-  padding: 20px 50px;
-  box-sizing: border-box;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-}
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-}
-.nav__link {
-  position: relative;
   color: #2e363e;
 }
-.nav__notification {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: tomato;
-  position: absolute;
-  left: 15px;
-  bottom: 15px;
-}
-.nav__dot {
-  display: flex;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 15px;
-  background-color: tomato;
-  left: 30px;
-  bottom: 30px;
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
