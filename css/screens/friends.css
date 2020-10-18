@@ -24,3 +24,29 @@
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
+
+#splash-screen {
+  background-color: var(--yjgGreen);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* visibility -> 해당 속성이 적용된 태그는 마우스에 걸리지 않게함.
+    단, html 자체는 없앨 수 없음. */
+  }
+}
