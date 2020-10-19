@@ -44,11 +44,6 @@
   }
 }
 
-.nav__btn {
-  animation: appearBtnAnim 0.3s ease-in-out forwards;
-  transform: translateY(50px);
-  opacity: 0;
-}
 .nav__btn:nth-child(1) {
   animation-delay: 2.1s;
 }
@@ -60,14 +55,4 @@
 }
 .nav__btn:last-child {
   animation-delay: 2.4s;
-}
-@keyframes appearBtnAnim {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
 }
